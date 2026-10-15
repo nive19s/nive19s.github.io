@@ -1,0 +1,15 @@
+@import "@fontsource-variable/inter-tight";
+@import "@fontsource-variable/jetbrains-mono";
+@tailwind base; @tailwind components; @tailwind utilities;
+
+html { background: #F3F3F0; }
+html.lenis, html.lenis body { height: auto; }
+.lenis.lenis-smooth { scroll-behavior: auto !important; }
+body { @apply bg-paper text-ink font-sans antialiased; overflow-x: hidden; }
+::selection { background: #D6FF3F; color: #0D0D0F; }
+
+/* Reusable pieces */
+.label { @apply font-mono text-[11px] uppercase tracking-[0.18em] text-mute; }
+.pill  { @apply rounded-full border border-black/10 bg-white/70 backdrop-blur px-4 py-2 text-sm; }
+
+@media (prefers-reduced-motion: reduce) { .animate-float, .animate-marquee { animation: none !important; } }
