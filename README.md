@@ -1,6 +1,6 @@
 # Nivethan Sothilingam — Portfolio
 
-This is my personal portfolio website. The site presents an introduction, selected work, experience, skills, education, certifications, and a contact form.
+This is my personal Portfolio website. The site presents an introduction, selected work, experience, skills, education, certifications, and a contact form.
 
 ## Built with
 
