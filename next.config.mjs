@@ -1,2 +1,11 @@
 /** @type {import('next').NextConfig} */
-export default { reactStrictMode: true, images: { formats: ["image/avif", "image/webp"] } };
+const nextConfig = {
+  output: "export",
+  reactStrictMode: true,
+  images: {
+    formats: ["image/avif", "image/webp"],
+    unoptimized: true,
+  },
+};
+
+export default nextConfig;
