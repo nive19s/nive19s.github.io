@@ -1,6 +1,6 @@
 "use client";
 import { useRef } from "react";
-import { motion, useScroll, useTransform } from "framer-motion";
+import { m, useScroll, useTransform } from "framer-motion";
 import { profile } from "@/lib/data";
 import Magnetic from "./Magnetic";
 
@@ -38,7 +38,7 @@ const PhoneIcon = () => (
   return (
     <section id="contact" ref={ref} className="relative overflow-hidden bg-ink px-6 pt-28 text-white md:px-12">
       <div className="mx-auto max-w-6xl">
-        <p className="label !text-white/40">Contact</p>
+        <p className="label !text-white/60">Contact</p>
         <h2 className="mt-4 text-5xl font-semibold leading-[0.95] tracking-tight md:text-8xl">Let’s build<br />something great.</h2>
         <div className="mt-10 flex flex-wrap items-center gap-4">
           <Magnetic><a href={`mailto:${profile.email}`} className="group flex items-center gap-3 rounded-full bg-lime py-2 pl-7 pr-2 font-medium text-ink">Say hello
@@ -56,7 +56,7 @@ const PhoneIcon = () => (
           </a>
         </div>
       </div>
-      <motion.div style={{ y }} aria-hidden className="select-none pt-10 text-center text-[clamp(4rem,22vw,22rem)] font-semibold leading-[0.8] tracking-[-0.06em] text-white/[0.07]">NIVETHAN</motion.div>
+      <m.div style={{ y }} aria-hidden className="select-none pt-10 text-center text-[clamp(4rem,22vw,22rem)] font-semibold leading-[0.8] tracking-[-0.06em] text-white/[0.07]">NIVETHAN</m.div>
     </section>
 
     

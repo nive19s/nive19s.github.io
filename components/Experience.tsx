@@ -1,5 +1,5 @@
 "use client";
-import { motion } from "framer-motion";
+import { m } from "framer-motion";
 import { jobs, education, certifications } from "@/lib/data";
 
 const ease = [0.22, 1, 0.36, 1] as const;
@@ -24,7 +24,7 @@ export default function Experience() {
                 </h2>
                 <p className="mt-3 text-white/70">{j.role}</p>
                 <p className="label mt-2 !text-lime">{j.period}</p>
-                <p className="mt-5 text-sm leading-relaxed text-white/40">
+                <p className="mt-5 text-sm leading-relaxed text-white/60">
                   {j.product}
                 </p>
                 <div className="mt-6 flex flex-wrap gap-2">
@@ -40,7 +40,7 @@ export default function Experience() {
               </div>
               <ul className="divide-y divide-white/10">
                 {j.points.map((t, i) => (
-                  <motion.li
+                  <m.li
                     key={i}
                     initial={{ opacity: 0, y: 24 }}
                     whileInView={{ opacity: 1, y: 0 }}
@@ -48,11 +48,11 @@ export default function Experience() {
                     transition={{ delay: i * 0.05, duration: 0.7, ease }}
                     className="flex gap-4 py-4 text-base text-white/80 md:text-lg"
                   >
-                    <span className="font-mono text-sm text-white/30">
+                    <span className="font-mono text-sm text-white/50">
                       {String(i + 1).padStart(2, "0")}
                     </span>
                     {t}
-                  </motion.li>
+                  </m.li>
                 ))}
               </ul>
             </div>

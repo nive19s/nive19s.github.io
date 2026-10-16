@@ -1,7 +1,7 @@
 "use client";
 import { useRef } from "react";
 import Image from "next/image";
-import { motion, useScroll, useTransform } from "framer-motion";
+import { m, useScroll, useTransform } from "framer-motion";
 import { profile, stats } from "@/lib/data";
 import Magnetic from "./Magnetic";
 import me from "@/public/images/nive2.webp";
@@ -34,22 +34,22 @@ export default function Hero() {
       </div>
 
       {/* Headline */}
-      <motion.h1
+      <m.h1
         initial={{ opacity: 0, y: 60 }}
         animate={{ opacity: 1, y: 0 }}
         transition={{ duration: 1, ease: [0.22, 1, 0.36, 1] }}
         className="text-center text-[clamp(3.6rem,17vw,10rem)] font-semibold leading-[0.9] tracking-[-0.05em]"
       >
         Sothilin<span className="text-mute">gam</span> Nivethan
-      </motion.h1>
+      </m.h1>
 
       {/* Portrait + floating glass cards */}
       <div className="relative mx-auto -mt-6 flex max-w-6xl justify-center md:-mt-20">
-        <motion.div
+        <m.div
           style={{ y: photoY, scale: photoScale }}
           className="relative z-10 w-[90%] max-w-[520px] will-change-transform"
         >
-          <motion.div
+          <m.div
             initial={{ opacity: 0, y: 80 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ delay: 0.2, duration: 1.1, ease: [0.22, 1, 0.36, 1] }}
@@ -60,11 +60,11 @@ export default function Hero() {
               alt="Portrait of Nivethan Sothilingam"
               priority
               placeholder="blur"
-              sizes="(max-width:768px) 82vw, 460px"
+              sizes="(max-width: 768px) 90vw, 520px"
               className="h-full w-full object-cover"
             />
-          </motion.div>
-        </motion.div>
+          </m.div>
+        </m.div>
 
         <FloatCard
           className=" hidden z-0 left-0 top-10 md:top-40 md:left-[6%]"
@@ -84,7 +84,7 @@ export default function Hero() {
       <div className="relative z-20 mx-auto -mt-16 max-w-6xl rounded-[2rem] bg-ink p-6 pt-24 text-white md:p-10 md:pt-28">
         <div className="grid gap-10 md:grid-cols-[1.4fr_1fr]">
           <div>
-            <p className="label !text-white/50">What I do</p>
+            <p className="label !text-white/70">What I do</p>
             <p className="mt-4 max-w-lg text-2xl font-medium leading-snug md:text-3xl">
               {profile.pitch}
             </p>
@@ -131,7 +131,7 @@ export default function Hero() {
                 <div className="text-4xl font-semibold tracking-tight md:text-5xl">
                   {s.value}
                 </div>
-                <div className="label mt-1 !text-white/40">{s.label}</div>
+                <div className="label mt-1 !text-white/60">{s.label}</div>
               </div>
             ))}
           </div>

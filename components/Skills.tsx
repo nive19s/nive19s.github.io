@@ -1,5 +1,5 @@
 "use client";
-import { motion } from "framer-motion";
+import { m } from "framer-motion";
 import { techGroups, tools, marquee } from "@/lib/data";
 import TechIcon from "./TechIcons";
 import { toolLinks } from "@/lib/icons";
@@ -23,7 +23,7 @@ export default function Skills() {
 
         <div className="mt-12 grid gap-4 md:grid-cols-2 lg:grid-cols-3">
           {techGroups.map((g, i) => (
-            <motion.div key={g.title} initial={{ opacity: 0, y: 40 }} whileInView={{ opacity: 1, y: 0 }} viewport={{ once: true, margin: "-60px" }}
+            <m.div key={g.title} initial={{ opacity: 0, y: 40 }} whileInView={{ opacity: 1, y: 0 }} viewport={{ once: true, margin: "-60px" }}
               transition={{ delay: (i % 3) * 0.08, duration: 0.7, ease }} className="rounded-3xl border border-black/10 bg-white p-6">
               <p className="label">{String(i + 1).padStart(2, "0")} · {g.title}</p>
               <div className="mt-5 flex flex-wrap gap-2">
@@ -38,13 +38,13 @@ export default function Skills() {
   </span>
 )}
               </div>
-            </motion.div>
+            </m.div>
           ))}
         </div>
 
         {/* Tools */}
         <div className="mt-5 rounded-3xl bg-ink p-7 text-white md:p-10">
-          <p className="label !text-white/40">Tools I use daily</p>
+          <p className="label !text-white/60">Tools I use daily</p>
           <div className="mt-6 grid grid-cols-2 gap-3 sm:grid-cols-3 md:grid-cols-5">
   {tools.map((t) => (
     <a

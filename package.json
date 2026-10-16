@@ -7,6 +7,12 @@
     "build": "next build",
     "start": "next start"
   },
+  "browserslist": [
+    "> 0.5%",
+    "last 2 versions",
+    "not dead",
+    "not op_mini all"
+  ],
   "dependencies": {
     "@fontsource-variable/inter-tight": "^5.1.0",
     "@fontsource-variable/jetbrains-mono": "^5.1.0",

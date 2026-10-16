@@ -1,5 +1,6 @@
 import type { Metadata, Viewport } from "next";
 import "./globals.css";
+import MotionProvider from "@/components/MotionProvider";
 
 export const metadata: Metadata = {
   title: "Nivethan Sothilingam — Software Engineer",
@@ -8,5 +9,11 @@ export const metadata: Metadata = {
 export const viewport: Viewport = { themeColor: "#F3F3F0" };
 
 export default function RootLayout({ children }: { children: React.ReactNode }) {
-  return (<html lang="en"><body>{children}</body></html>);
+  return (
+    <html lang="en">
+      <body>
+        <MotionProvider>{children}</MotionProvider>
+      </body>
+    </html>
+  );
 }
