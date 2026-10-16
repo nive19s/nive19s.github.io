@@ -4,7 +4,7 @@ import Image from "next/image";
 import { motion, useScroll, useTransform } from "framer-motion";
 import { profile, stats } from "@/lib/data";
 import Magnetic from "./Magnetic";
-import me from "@/public/images/nive2.png";
+import me from "@/public/images/nive2.webp";
 
 // Hero: giant headline + portrait with Framer parallax, then dark info panel (like the reference)
 export default function Hero() {

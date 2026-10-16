@@ -43,15 +43,15 @@ export type Project = {
 };
 
 export const projects: Project[] = [
-  { title: "Dominion Wing", cover: "/images/projects/DW_Landing.png", type: "Client Website · Live", year: "Jul – Aug 2026", stack: ["Next.js", "TypeScript", "Tailwind CSS", "Framer Motion", "GSAP"],
+  { title: "Dominion Wing", cover: "/images/projects/DW_Landing.webp", type: "Client Website · Live", year: "Jul – Aug 2026", stack: ["Next.js", "TypeScript", "Tailwind CSS", "Framer Motion", "GSAP"],
     desc: "Freelance company website delivered end-to-end, from discovery to live handover.",
     overview: "A company website built with two fellow developers for a real client. We ran client discovery, designed the experience, built it with a motion-rich Next.js stack, then deployed and handed it over.",
     highlights: ["Client discovery through design and development", "Deployed and hosted on Hostinger with production environment settings", "Handed the finished, live site over to the client"],
     links: [{ label: "Visit live site", href: "https://dominionwing.com/" }],
   images: [
-  "/images/projects/DW_Landing.png",
-  "/images/projects/DW_Landing2.png",
-  "/images/projects/DW_Landing3.png",],
+  "/images/projects/DW_Landing.webp",
+  "/images/projects/DW_Landing2.webp",
+  "/images/projects/DW_Landing3.webp",],
   },
   { title: "Expense Tracker", type: "AI-Powered Platform", year: "Aug 2025", stack: ["Next.js", "React", "TypeScript", "Tailwind CSS", "Chart.js", "Neon", "Prisma", "Clerk"],
     desc: "AI expense tracking with smart categorisation and a real-time analytics dashboard.",
@@ -59,8 +59,8 @@ export const projects: Project[] = [
     highlights: ["DeepSeek AI via OpenRouter for insights and automatic classification", "Clerk authentication and Prisma + Neon (PostgreSQL) data layer", "Real-time analytics dashboard with Chart.js"],
     links: [{ label: "GitHub", href: "https://github.com/nive19s/next-expense-tracker" }], 
     images: [
-    "/images/projects/Expense_tracker_landing.png",
-    "/images/projects/Expense_tracker2.png",
+    "/images/projects/Expense_tracker_landing.webp",
+    "/images/projects/Expense_tracker2.webp",
     ],
   },
   { title: "BookHive", type: "Full-Stack Platform", year: "May – Oct 2025", stack: ["React.js", "Tailwind CSS", "Spring Boot", "Supabase", "PostgreSQL"],
@@ -69,9 +69,9 @@ export const projects: Project[] = [
     highlights: ["Dashboards, inventory management and order modules", "Book exchange, borrowing and bidding flows", "Community features such as book circles"],
     links: [{ label: "Frontend repo", href: "https://github.com/Benshekniel/BookHiveFrontend" }, { label: "Backend repo", href: "https://github.com/Benshekniel/BookHiveBackend" }],
     images: [
-    "/images/projects/BookHV_landing.png",
-    "/images/projects/BookHV2.png",
-    "/images/projects/BookHV3.png",
+    "/images/projects/BookHV_landing.webp",
+    "/images/projects/BookHV2.webp",
+    "/images/projects/BookHV3.webp",
     ],
   },
   { title: "TerraFit", type: "Mobile App", year: "Mar – Apr 2026", stack: ["React Native", "Node.js", "Supabase"],
@@ -80,7 +80,7 @@ export const projects: Project[] = [
     highlights: ["Authentication, profile management and dashboard features", "Backend API integration", "APK builds for local and external network deployment"],
     links: [{ label: "GitHub profile", href: "https://github.com/nive19s" }],
     images: [
-  "/images/projects/terafit.jpg",],
+  "/images/projects/terafit.webp",],
   },
   { title: "LaunchPad", type: "Internship Platform", year: "Jun 2024 – Apr 2025", stack: ["HTML", "CSS", "JavaScript", "PHP", "PostgreSQL"],
     desc: "Multi-role internship management for the UCSC Professional Development Centre.",
@@ -88,9 +88,9 @@ export const projects: Project[] = [
     highlights: ["Student management and company approvals", "Interview and scheduling workflows", "Complaint handling"],
     links: [{ label: "GitHub", href: "https://github.com/group-project-cs46/website" }],
     images: [
-    "/images/projects/Launcpad_landing.png",
-    "/images/projects/Launcpad2.png",
-    "/images/projects/Launcpad3.png",
+    "/images/projects/Launcpad_landing.webp",
+    "/images/projects/Launcpad2.webp",
+    "/images/projects/Launcpad3.webp",
     ],
   },
   { title: "LIBO", type: "Library System", year: "Sep 2024", stack: ["MongoDB", "Express.js", "React.js", "Node.js"],
@@ -99,15 +99,15 @@ export const projects: Project[] = [
     highlights: ["Book reservations, borrowing and return tracking", "Authentication and REST APIs", "Digital records of user requests"],
     links: [{ label: "GitHub", href: "https://github.com/Benshekniel/RAD_LIBO" }],
     images: [
-  "/images/projects/libo_landing.png",
-  "/images/projects/libo_dashboard.png",
-  "/images/projects/libo2.png",],
+  "/images/projects/libo_landing.webp",
+  "/images/projects/libo_dashboard.webp",
+  "/images/projects/libo2.webp",],
   },
 ];
 
-// Work timeline. `logo` optional: put a file in /public/images and set e.g. "/images/boffo.png"
+// Work timeline. `logo` optional: put a file in /public/images and set e.g. "/images/boffo.webp"
 export const jobs = [
-  { company: "Boffo System Labs", role: "Software Engineer Intern", period: "Dec 2025 — May 2026", logo: "/images/Boffo_sys_logo.png",
+  { company: "Boffo System Labs", role: "Software Engineer Intern", period: "Dec 2025 — May 2026", logo: "/images/Boffo_sys_logo.webp",
     product: "GroomEase — multi-role grooming service management platform (Angular, .NET Core, PostgreSQL)",
     points: [
       "Implemented JWT authentication plus Microsoft Entra ID, Google and Facebook SSO.",
@@ -120,7 +120,7 @@ export const jobs = [
       "Built a React Native demo app with a Node.js backend and Supabase database.",
     ],
     tags: ["Angular", ".NET Core", "PostgreSQL", "Azure", "JWT", "SSO"] },
-  { company: "Dominion Wing", role: "Freelance Developer", period: "Jul — Aug 2026", logo: "/images/Dominion_logo.png",
+  { company: "Dominion Wing", role: "Freelance Developer", period: "Jul — Aug 2026", logo: "/images/Dominion_logo.webp",
     product: "Client company website, with two fellow developers",
     points: ["Led client discovery through design and development.", "Deployed and hosted on Hostinger and handed over the live site."],
     tags: ["Next.js", "TypeScript", "Tailwind", "GSAP", "Framer Motion"] },
