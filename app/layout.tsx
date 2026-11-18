@@ -3,7 +3,7 @@ import "./globals.css";
 import MotionProvider from "@/components/MotionProvider";
 
 export const metadata: Metadata = {
-  title: "Nivethan Sothilingam — Software Engineer",
+  title: "Nivethan Sothilingam - Software Engineer",
   description: "Portfolio of Nivethan Sothilingam: full-stack engineer building fast, polished web products.",
 };
 export const viewport: Viewport = { themeColor: "#F3F3F0" };

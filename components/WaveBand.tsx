@@ -39,7 +39,7 @@ export default function WaveBand({ reverse = false }: { reverse?: boolean }) {
     <section ref={section} aria-hidden className="relative my-10 h-[180px] overflow-hidden md:h-[300px]">
       <svg viewBox="0 0 1440 340" className="absolute left-1/2 top-0 h-full w-[1000px] max-w-none -translate-x-1/2 md:w-full">
         {/* strokeWidth = band thickness (was 92) */}
-        <path d={WAVE} id="wave" fill="none" stroke="#0D0D0F" strokeWidth="56" />
+        <path d={WAVE} id="wave" fill="none" stroke="#0D0D0F" strokeWidth="70" />
         <text className="font-sans" fontSize="26" fontWeight="600" fill="#fff" letterSpacing="1" dy="9">
           <textPath ref={textPath} href="#wave" startOffset="0">{TEXT}</textPath>
         </text>
